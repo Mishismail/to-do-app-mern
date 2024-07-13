@@ -179,12 +179,12 @@ This project is licensed under the MIT License.
 
 ## Login
 
-images/Screenshot 2024-07-13 at 23.28.18.png
+![alt text](Login.png)
 
 ## Register
 
-images/Screenshot 2024-07-13 at 23.29.01.png
+![alt text](Register.png)
 
 ## To Do
 
-images/Screenshot 2024-07-13 at 23.30.03.png
+![alt text](To-Do-App.png)
