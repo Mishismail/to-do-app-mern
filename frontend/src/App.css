@@ -1,8 +1,14 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Varela Round", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header {
@@ -38,14 +44,6 @@ nav ul li button:hover {
   text-decoration: underline;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 20px;
-}
 
 .auth-card {
   background: #ffffff;
@@ -53,16 +51,11 @@ nav ul li button:hover {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 100%;
-  max-width: 400px;
+  max-width: 4000px;
   text-align: center;
   margin: 20px;
 }
 
-h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333333;
-}
 
 form {
   display: flex;
@@ -72,57 +65,11 @@ form {
 input {
   margin: 10px 0;
   padding: 10px;
-  width: 100%;
-  border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
-}
-
-button {
-  padding: 10px;
-  width: 100%;
-  border: none;
-  border-radius: 4px;
-  background-color: #28a745;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #218838;
+  font-size: 10;
 }
 
 .main-content {
   padding: 20px;
   text-align: center;
-}
-
-.todo-list {
-  list-style: none;
-  padding: 0;
-}
-
-.todo-list li {
-  background: #ffffff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 4px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.todo-list button {
-  background-color: #dc3545;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-.todo-list button:hover {
-  background-color: #c82333;
 }

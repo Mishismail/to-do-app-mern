@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AuthCard from './components/AuthCard';
 import ProtectedRoute from './components/ProtectedRoute';
+import './App.css';
 
 function App() {
     return (

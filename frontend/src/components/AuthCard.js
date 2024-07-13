@@ -12,24 +12,36 @@ const AuthCard = () => {
     const [surname, setSurname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [alert, setAlert] = useState(null);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             if (isLogin) {
                 await login(email, password);
+                setAlert({ type: 'success', message: 'Logged in successfully!' });
             } else {
                 await signup(name, surname, email, password);
+                setAlert({ type: 'success', message: 'Registered successfully!' });
             }
-            navigate('/');
+            setTimeout(() => {
+                setAlert(null);
+                navigate('/');
+            }, 2000);
         } catch (error) {
-            console.error(error);
+            setAlert({ type: 'error', message: 'Invalid username or password' });
         }
     };
 
     return (
-        <div className="main-container">
+        <div className="main-container varela-round-regular">
             <div className="main">
+                {alert && (
+                    <div className={`alert ${alert.type}`}>
+                        {alert.message}
+                        <span className="closebtn" onClick={() => setAlert(null)}>&times;</span>
+                    </div>
+                )}
                 {isLogin ? (
                     <div className="login">
                         <form className="form" onSubmit={handleSubmit}>

@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100dvh;
   margin: 0;
   background-color: #f4f4f4;
 }
@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   background-color: #240046;
   height: auto;
-  width: 100%;
+  width: 80dvw;
   max-width: 500px;
   overflow: hidden;
   border-radius: 12px;

@@ -33,9 +33,9 @@ const AuthProvider = ({ children }) => {
         }
     };
 
-    const signup = async (name, email, password) => {
+    const signup = async (name, surname, email, password) => {
         try {
-            const { data } = await axios.post('/api/users', { name, email, password });
+            const { data } = await axios.post('/api/users', { name, surname, email, password });
             localStorage.setItem('token', data.token);
             setUser(data);
         } catch (error) {
