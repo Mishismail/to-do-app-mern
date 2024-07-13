@@ -21,8 +21,8 @@ This is a full-stack MERN (MongoDB, Express, React, Node.js) to-do list applicat
 ## Setup Instructions
 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/todo-list-app.git
-cd todo-list-app
+git clone https://github.com/Mishismail/to-do-app-mern.git
+cd to-do-app-mern
 ```
 
 2. Install Dependencies
